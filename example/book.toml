@@ -1,0 +1,14 @@
+[book]
+authors = ["mdbook-drawio"]
+multilingual = false
+src = "src"
+title = "mdbook-drawio Example"
+
+[build]
+create-missing = true
+build-dir = "../_build"
+[preprocessor]
+[preprocessor.drawio]
+command = "../target/debug/mdbook-drawio"
+result-dir = "gen/drawio"
+drawio-bin = "drawio"
