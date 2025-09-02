@@ -1,0 +1,103 @@
+[2025-09-02T09:24:06Z DEBUG mdbook_drawio] Starting mdbook-drawio preprocessing
+[2025-09-02T09:24:06Z DEBUG mdbook_drawio] Book context: PreprocessorContext { root: "/home/runner/work/mdbook-drawio/mdbook-drawio/example", config: Config { book: BookConfig { title: Some("mdbook-drawio Example"), authors: ["mdbook-drawio"], description: None, src: "src", multilingual: false, language: Some("en"), text_direction: None }, build: BuildConfig { build_dir: "../_build", create_missing: true, use_default_preprocessors: true, extra_watch_dirs: [] }, rust: RustConfig { edition: None }, rest: Table({"preprocessor": Table({"drawio": Table({"command": String("../target/debug/mdbook-drawio"), "drawio-bin": String("drawio"), "result-dir": String("gen/drawio")})})}) }, renderer: "html", mdbook_version: "0.4.49", chapter_titles: RefCell { value: {} }, __non_exhaustive: () }
+[2025-09-02T09:24:06Z DEBUG mdbook_drawio] Processing regex match: Captures({0: 86..133/"{{#drawio path=\"diagrams/hello.drawio\" page=0}}", 1: 102..123/"diagrams/hello.drawio", 2: 130..131/"0"})
+[2025-09-02T09:24:06Z DEBUG mdbook_drawio]   Relative path: diagrams/hello.drawio
+[2025-09-02T09:24:06Z DEBUG mdbook_drawio]   Page: 0
+[2025-09-02T09:24:06Z DEBUG mdbook_drawio]   Absolute path: "/home/runner/work/mdbook-drawio/mdbook-drawio/example/diagrams/hello.drawio"
+[2025-09-02T09:24:06Z DEBUG mdbook_drawio]   Diagram name: hello
+[2025-09-02T09:24:06Z DEBUG mdbook_drawio]   SVG filename: hello-page-0.svg
+[2025-09-02T09:24:06Z DEBUG mdbook_drawio]   SVG path: "/home/runner/work/mdbook-drawio/mdbook-drawio/example/src/gen/drawio/hello-page-0.svg"
+[2025-09-02T09:24:06Z DEBUG mdbook_drawio] Calculating relative path:
+[2025-09-02T09:24:06Z DEBUG mdbook_drawio]   Chapter path: Some("introduction.md")
+[2025-09-02T09:24:06Z DEBUG mdbook_drawio]   Target path: "/home/runner/work/mdbook-drawio/mdbook-drawio/example/src/gen/drawio/hello-page-0.svg"
+[2025-09-02T09:24:06Z DEBUG mdbook_drawio]   Target filename: hello-page-0.svg
+[2025-09-02T09:24:06Z DEBUG mdbook_drawio]   Chapter depth: 0
+[2025-09-02T09:24:06Z DEBUG mdbook_drawio]   Relative path from chapter: "./gen/drawio/hello-page-0.svg"
+[2025-09-02T09:24:06Z DEBUG mdbook_drawio]   Relative link from chapter: "./gen/drawio/hello-page-0.svg"
+[2025-09-02T09:24:06Z DEBUG mdbook_drawio] Executing drawio command:
+[2025-09-02T09:24:06Z DEBUG mdbook_drawio]   Command: drawio
+[2025-09-02T09:24:06Z DEBUG mdbook_drawio]   Input file: "/home/runner/work/mdbook-drawio/mdbook-drawio/example/diagrams/hello.drawio"
+[2025-09-02T09:24:06Z DEBUG mdbook_drawio]   Output file: "/home/runner/work/mdbook-drawio/mdbook-drawio/example/src/gen/drawio/hello-page-0.svg"
+[2025-09-02T09:24:06Z DEBUG mdbook_drawio]   Page: 0
+[2025-09-02T09:24:06Z DEBUG mdbook_drawio] Full command: ELECTRON_DISABLE_GPU="1" "drawio" "-x" "/home/runner/work/mdbook-drawio/mdbook-drawio/example/diagrams/hello.drawio" "-p" "0" "-f" "svg" "-o" "/home/runner/work/mdbook-drawio/mdbook-drawio/example/src/gen/drawio/hello-page-0.svg"
+[2025-09-02T09:24:08Z DEBUG mdbook_drawio] Command exit status: ExitStatus(unix_wait_status(133))
+[2025-09-02T09:24:08Z DEBUG mdbook_drawio] Command stdout: 
+[2025-09-02T09:24:08Z DEBUG mdbook_drawio] Command stderr: [19547:0902/092406.859465:FATAL:setuid_sandbox_host.cc(163)] The SUID sandbox helper binary was found, but is not configured correctly. Rather than run without sandboxing I'm aborting now. You need to make sure that /nix/store/940abkm8x4jx6bykk3898pig6yn9df4k-electron-35.7.5/libexec/electron/chrome-sandbox is owned by root and has mode 4755.
+    
+[2025-09-02T09:24:08Z DEBUG mdbook_drawio] Produced Markdown snippet for SVG: ![Diagram not found at ./gen/drawio/hello-page-0.svg](./gen/drawio/hello-page-0.svg)
+[2025-09-02T09:24:08Z DEBUG mdbook_drawio] Processing regex match: Captures({0: 135..192/"{{#drawio path=\"diagrams/subdiagrams/sub.drawio\" page=0}}", 1: 151..182/"diagrams/subdiagrams/sub.drawio", 2: 189..190/"0"})
+[2025-09-02T09:24:08Z DEBUG mdbook_drawio]   Relative path: diagrams/subdiagrams/sub.drawio
+[2025-09-02T09:24:08Z DEBUG mdbook_drawio]   Page: 0
+[2025-09-02T09:24:08Z DEBUG mdbook_drawio]   Absolute path: "/home/runner/work/mdbook-drawio/mdbook-drawio/example/diagrams/subdiagrams/sub.drawio"
+[2025-09-02T09:24:08Z DEBUG mdbook_drawio]   Diagram name: sub
+[2025-09-02T09:24:08Z DEBUG mdbook_drawio]   SVG filename: sub-page-0.svg
+[2025-09-02T09:24:08Z DEBUG mdbook_drawio]   SVG path: "/home/runner/work/mdbook-drawio/mdbook-drawio/example/src/gen/drawio/sub-page-0.svg"
+[2025-09-02T09:24:08Z DEBUG mdbook_drawio] Calculating relative path:
+[2025-09-02T09:24:08Z DEBUG mdbook_drawio]   Chapter path: Some("introduction.md")
+[2025-09-02T09:24:08Z DEBUG mdbook_drawio]   Target path: "/home/runner/work/mdbook-drawio/mdbook-drawio/example/src/gen/drawio/sub-page-0.svg"
+[2025-09-02T09:24:08Z DEBUG mdbook_drawio]   Target filename: sub-page-0.svg
+[2025-09-02T09:24:08Z DEBUG mdbook_drawio]   Chapter depth: 0
+[2025-09-02T09:24:08Z DEBUG mdbook_drawio]   Relative path from chapter: "./gen/drawio/sub-page-0.svg"
+[2025-09-02T09:24:08Z DEBUG mdbook_drawio]   Relative link from chapter: "./gen/drawio/sub-page-0.svg"
+[2025-09-02T09:24:08Z DEBUG mdbook_drawio] Executing drawio command:
+[2025-09-02T09:24:08Z DEBUG mdbook_drawio]   Command: drawio
+[2025-09-02T09:24:08Z DEBUG mdbook_drawio]   Input file: "/home/runner/work/mdbook-drawio/mdbook-drawio/example/diagrams/subdiagrams/sub.drawio"
+[2025-09-02T09:24:08Z DEBUG mdbook_drawio]   Output file: "/home/runner/work/mdbook-drawio/mdbook-drawio/example/src/gen/drawio/sub-page-0.svg"
+[2025-09-02T09:24:08Z DEBUG mdbook_drawio]   Page: 0
+[2025-09-02T09:24:08Z DEBUG mdbook_drawio] Full command: ELECTRON_DISABLE_GPU="1" "drawio" "-x" "/home/runner/work/mdbook-drawio/mdbook-drawio/example/diagrams/subdiagrams/sub.drawio" "-p" "0" "-f" "svg" "-o" "/home/runner/work/mdbook-drawio/mdbook-drawio/example/src/gen/drawio/sub-page-0.svg"
+[2025-09-02T09:24:09Z DEBUG mdbook_drawio] Command exit status: ExitStatus(unix_wait_status(133))
+[2025-09-02T09:24:09Z DEBUG mdbook_drawio] Command stdout: 
+[2025-09-02T09:24:09Z DEBUG mdbook_drawio] Command stderr: [19561:0902/092408.210353:FATAL:setuid_sandbox_host.cc(163)] The SUID sandbox helper binary was found, but is not configured correctly. Rather than run without sandboxing I'm aborting now. You need to make sure that /nix/store/940abkm8x4jx6bykk3898pig6yn9df4k-electron-35.7.5/libexec/electron/chrome-sandbox is owned by root and has mode 4755.
+    
+[2025-09-02T09:24:09Z DEBUG mdbook_drawio] Produced Markdown snippet for SVG: ![Diagram not found at ./gen/drawio/sub-page-0.svg](./gen/drawio/sub-page-0.svg)
+[2025-09-02T09:24:09Z DEBUG mdbook_drawio] Processing regex match: Captures({0: 15..62/"{{#drawio path=\"diagrams/hello.drawio\" page=1}}", 1: 31..52/"diagrams/hello.drawio", 2: 59..60/"1"})
+[2025-09-02T09:24:09Z DEBUG mdbook_drawio]   Relative path: diagrams/hello.drawio
+[2025-09-02T09:24:09Z DEBUG mdbook_drawio]   Page: 1
+[2025-09-02T09:24:09Z DEBUG mdbook_drawio]   Absolute path: "/home/runner/work/mdbook-drawio/mdbook-drawio/example/diagrams/hello.drawio"
+[2025-09-02T09:24:09Z DEBUG mdbook_drawio]   Diagram name: hello
+[2025-09-02T09:24:09Z DEBUG mdbook_drawio]   SVG filename: hello-page-1.svg
+[2025-09-02T09:24:09Z DEBUG mdbook_drawio]   SVG path: "/home/runner/work/mdbook-drawio/mdbook-drawio/example/src/gen/drawio/hello-page-1.svg"
+[2025-09-02T09:24:09Z DEBUG mdbook_drawio] Calculating relative path:
+[2025-09-02T09:24:09Z DEBUG mdbook_drawio]   Chapter path: Some("chapter/subchapter.md")
+[2025-09-02T09:24:09Z DEBUG mdbook_drawio]   Target path: "/home/runner/work/mdbook-drawio/mdbook-drawio/example/src/gen/drawio/hello-page-1.svg"
+[2025-09-02T09:24:09Z DEBUG mdbook_drawio]   Target filename: hello-page-1.svg
+[2025-09-02T09:24:09Z DEBUG mdbook_drawio]   Chapter depth: 1
+[2025-09-02T09:24:09Z DEBUG mdbook_drawio]   Relative path from chapter: "../gen/drawio/hello-page-1.svg"
+[2025-09-02T09:24:09Z DEBUG mdbook_drawio]   Relative link from chapter: "../gen/drawio/hello-page-1.svg"
+[2025-09-02T09:24:09Z DEBUG mdbook_drawio] Executing drawio command:
+[2025-09-02T09:24:09Z DEBUG mdbook_drawio]   Command: drawio
+[2025-09-02T09:24:09Z DEBUG mdbook_drawio]   Input file: "/home/runner/work/mdbook-drawio/mdbook-drawio/example/diagrams/hello.drawio"
+[2025-09-02T09:24:09Z DEBUG mdbook_drawio]   Output file: "/home/runner/work/mdbook-drawio/mdbook-drawio/example/src/gen/drawio/hello-page-1.svg"
+[2025-09-02T09:24:09Z DEBUG mdbook_drawio]   Page: 1
+[2025-09-02T09:24:09Z DEBUG mdbook_drawio] Full command: ELECTRON_DISABLE_GPU="1" "drawio" "-x" "/home/runner/work/mdbook-drawio/mdbook-drawio/example/diagrams/hello.drawio" "-p" "1" "-f" "svg" "-o" "/home/runner/work/mdbook-drawio/mdbook-drawio/example/src/gen/drawio/hello-page-1.svg"
+[2025-09-02T09:24:10Z DEBUG mdbook_drawio] Command exit status: ExitStatus(unix_wait_status(133))
+[2025-09-02T09:24:10Z DEBUG mdbook_drawio] Command stdout: 
+[2025-09-02T09:24:10Z DEBUG mdbook_drawio] Command stderr: [19579:0902/092409.509017:FATAL:setuid_sandbox_host.cc(163)] The SUID sandbox helper binary was found, but is not configured correctly. Rather than run without sandboxing I'm aborting now. You need to make sure that /nix/store/940abkm8x4jx6bykk3898pig6yn9df4k-electron-35.7.5/libexec/electron/chrome-sandbox is owned by root and has mode 4755.
+    
+[2025-09-02T09:24:10Z DEBUG mdbook_drawio] Produced Markdown snippet for SVG: ![Diagram not found at ../gen/drawio/hello-page-1.svg](../gen/drawio/hello-page-1.svg)
+[2025-09-02T09:24:10Z DEBUG mdbook_drawio] Processing regex match: Captures({0: 51..98/"{{#drawio path=\"diagrams/hello.drawio\" page=0}}", 1: 67..88/"diagrams/hello.drawio", 2: 95..96/"0"})
+[2025-09-02T09:24:10Z DEBUG mdbook_drawio]   Relative path: diagrams/hello.drawio
+[2025-09-02T09:24:10Z DEBUG mdbook_drawio]   Page: 0
+[2025-09-02T09:24:10Z DEBUG mdbook_drawio]   Absolute path: "/home/runner/work/mdbook-drawio/mdbook-drawio/example/diagrams/hello.drawio"
+[2025-09-02T09:24:10Z DEBUG mdbook_drawio]   Diagram name: hello
+[2025-09-02T09:24:10Z DEBUG mdbook_drawio]   SVG filename: hello-page-0.svg
+[2025-09-02T09:24:10Z DEBUG mdbook_drawio]   SVG path: "/home/runner/work/mdbook-drawio/mdbook-drawio/example/src/gen/drawio/hello-page-0.svg"
+[2025-09-02T09:24:10Z DEBUG mdbook_drawio] Calculating relative path:
+[2025-09-02T09:24:10Z DEBUG mdbook_drawio]   Chapter path: Some("chapter/subchapter/subchapter2.md")
+[2025-09-02T09:24:10Z DEBUG mdbook_drawio]   Target path: "/home/runner/work/mdbook-drawio/mdbook-drawio/example/src/gen/drawio/hello-page-0.svg"
+[2025-09-02T09:24:10Z DEBUG mdbook_drawio]   Target filename: hello-page-0.svg
+[2025-09-02T09:24:10Z DEBUG mdbook_drawio]   Chapter depth: 2
+[2025-09-02T09:24:10Z DEBUG mdbook_drawio]   Relative path from chapter: "../../gen/drawio/hello-page-0.svg"
+[2025-09-02T09:24:10Z DEBUG mdbook_drawio]   Relative link from chapter: "../../gen/drawio/hello-page-0.svg"
+[2025-09-02T09:24:10Z DEBUG mdbook_drawio] Executing drawio command:
+[2025-09-02T09:24:10Z DEBUG mdbook_drawio]   Command: drawio
+[2025-09-02T09:24:10Z DEBUG mdbook_drawio]   Input file: "/home/runner/work/mdbook-drawio/mdbook-drawio/example/diagrams/hello.drawio"
+[2025-09-02T09:24:10Z DEBUG mdbook_drawio]   Output file: "/home/runner/work/mdbook-drawio/mdbook-drawio/example/src/gen/drawio/hello-page-0.svg"
+[2025-09-02T09:24:10Z DEBUG mdbook_drawio]   Page: 0
+[2025-09-02T09:24:10Z DEBUG mdbook_drawio] Full command: ELECTRON_DISABLE_GPU="1" "drawio" "-x" "/home/runner/work/mdbook-drawio/mdbook-drawio/example/diagrams/hello.drawio" "-p" "0" "-f" "svg" "-o" "/home/runner/work/mdbook-drawio/mdbook-drawio/example/src/gen/drawio/hello-page-0.svg"
+[2025-09-02T09:24:12Z DEBUG mdbook_drawio] Command exit status: ExitStatus(unix_wait_status(133))
+[2025-09-02T09:24:12Z DEBUG mdbook_drawio] Command stdout: 
+[2025-09-02T09:24:12Z DEBUG mdbook_drawio] Command stderr: [19596:0902/092410.844879:FATAL:setuid_sandbox_host.cc(163)] The SUID sandbox helper binary was found, but is not configured correctly. Rather than run without sandboxing I'm aborting now. You need to make sure that /nix/store/940abkm8x4jx6bykk3898pig6yn9df4k-electron-35.7.5/libexec/electron/chrome-sandbox is owned by root and has mode 4755.
+    
+[2025-09-02T09:24:12Z DEBUG mdbook_drawio] Produced Markdown snippet for SVG: ![Diagram not found at ../../gen/drawio/hello-page-0.svg](../../gen/drawio/hello-page-0.svg)
+[2025-09-02T09:24:12Z DEBUG mdbook_drawio] Preprocessing completed successfully
