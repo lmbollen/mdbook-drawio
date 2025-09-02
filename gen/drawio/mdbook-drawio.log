@@ -1,107 +1,303 @@
-[2025-09-02T09:35:11Z DEBUG mdbook_drawio] Starting mdbook-drawio preprocessing
-[2025-09-02T09:35:11Z DEBUG mdbook_drawio] Book context: PreprocessorContext { root: "/home/runner/work/mdbook-drawio/mdbook-drawio/example", config: Config { book: BookConfig { title: Some("mdbook-drawio Example"), authors: ["mdbook-drawio"], description: None, src: "src", multilingual: false, language: Some("en"), text_direction: None }, build: BuildConfig { build_dir: "../_build", create_missing: true, use_default_preprocessors: true, extra_watch_dirs: [] }, rust: RustConfig { edition: None }, rest: Table({"preprocessor": Table({"drawio": Table({"command": String("../target/debug/mdbook-drawio"), "drawio-bin": String("drawio"), "result-dir": String("gen/drawio")})})}) }, renderer: "html", mdbook_version: "0.4.49", chapter_titles: RefCell { value: {} }, __non_exhaustive: () }
-[2025-09-02T09:35:11Z DEBUG mdbook_drawio] Processing regex match: Captures({0: 86..133/"{{#drawio path=\"diagrams/hello.drawio\" page=0}}", 1: 102..123/"diagrams/hello.drawio", 2: 130..131/"0"})
-[2025-09-02T09:35:11Z DEBUG mdbook_drawio]   Relative path: diagrams/hello.drawio
-[2025-09-02T09:35:11Z DEBUG mdbook_drawio]   Page: 0
-[2025-09-02T09:35:11Z DEBUG mdbook_drawio]   Absolute path: "/home/runner/work/mdbook-drawio/mdbook-drawio/example/diagrams/hello.drawio"
-[2025-09-02T09:35:11Z DEBUG mdbook_drawio]   Diagram name: hello
-[2025-09-02T09:35:11Z DEBUG mdbook_drawio]   SVG filename: hello-page-0.svg
-[2025-09-02T09:35:11Z DEBUG mdbook_drawio]   SVG path: "/home/runner/work/mdbook-drawio/mdbook-drawio/example/src/gen/drawio/hello-page-0.svg"
-[2025-09-02T09:35:11Z DEBUG mdbook_drawio] Calculating relative path:
-[2025-09-02T09:35:11Z DEBUG mdbook_drawio]   Chapter path: Some("introduction.md")
-[2025-09-02T09:35:11Z DEBUG mdbook_drawio]   Target path: "/home/runner/work/mdbook-drawio/mdbook-drawio/example/src/gen/drawio/hello-page-0.svg"
-[2025-09-02T09:35:11Z DEBUG mdbook_drawio]   Target filename: hello-page-0.svg
-[2025-09-02T09:35:11Z DEBUG mdbook_drawio]   Chapter depth: 0
-[2025-09-02T09:35:11Z DEBUG mdbook_drawio]   Relative path from chapter: "./gen/drawio/hello-page-0.svg"
-[2025-09-02T09:35:11Z DEBUG mdbook_drawio]   Relative link from chapter: "./gen/drawio/hello-page-0.svg"
-[2025-09-02T09:35:11Z DEBUG mdbook_drawio] Executing drawio command:
-[2025-09-02T09:35:11Z DEBUG mdbook_drawio]   Command: drawio
-[2025-09-02T09:35:11Z DEBUG mdbook_drawio]   Input file: "/home/runner/work/mdbook-drawio/mdbook-drawio/example/diagrams/hello.drawio"
-[2025-09-02T09:35:11Z DEBUG mdbook_drawio]   Output file: "/home/runner/work/mdbook-drawio/mdbook-drawio/example/src/gen/drawio/hello-page-0.svg"
-[2025-09-02T09:35:11Z DEBUG mdbook_drawio]   Page: 0
-[2025-09-02T09:35:11Z DEBUG mdbook_drawio] Full command: ELECTRON_DISABLE_GPU="1" "drawio" "-x" "/home/runner/work/mdbook-drawio/mdbook-drawio/example/diagrams/hello.drawio" "-p" "0" "-f" "svg" "-o" "/home/runner/work/mdbook-drawio/mdbook-drawio/example/src/gen/drawio/hello-page-0.svg"
-[2025-09-02T09:35:15Z DEBUG mdbook_drawio] Command exit status: ExitStatus(unix_wait_status(34048))
-[2025-09-02T09:35:15Z DEBUG mdbook_drawio] Command stdout: 
-[2025-09-02T09:35:15Z DEBUG mdbook_drawio] Command stderr: [19634:0902/093514.428674:FATAL:setuid_sandbox_host.cc(163)] The SUID sandbox helper binary was found, but is not configured correctly. Rather than run without sandboxing I'm aborting now. You need to make sure that /nix/store/940abkm8x4jx6bykk3898pig6yn9df4k-electron-35.7.5/libexec/electron/chrome-sandbox is owned by root and has mode 4755.
-    /nix/store/cx972iah70rs2p9ksjzynk3qcd51ydhb-xvfb-run-1+g87f6705/bin/.xvfb-run-wrapped: line 181: 19634 Trace/breakpoint trap   (core dumped) DISPLAY=:$SERVERNUM XAUTHORITY=$AUTHFILE "$@"
+[2025-09-02T09:45:09Z DEBUG mdbook_drawio] Starting mdbook-drawio preprocessing
+[2025-09-02T09:45:09Z DEBUG mdbook_drawio] Book context: PreprocessorContext { root: "/home/runner/work/mdbook-drawio/mdbook-drawio/example", config: Config { book: BookConfig { title: Some("mdbook-drawio Example"), authors: ["mdbook-drawio"], description: None, src: "src", multilingual: false, language: Some("en"), text_direction: None }, build: BuildConfig { build_dir: "../_build", create_missing: true, use_default_preprocessors: true, extra_watch_dirs: [] }, rust: RustConfig { edition: None }, rest: Table({"preprocessor": Table({"drawio": Table({"command": String("../target/debug/mdbook-drawio"), "drawio-bin": String("drawio"), "result-dir": String("gen/drawio")})})}) }, renderer: "html", mdbook_version: "0.4.49", chapter_titles: RefCell { value: {} }, __non_exhaustive: () }
+[2025-09-02T09:45:09Z DEBUG mdbook_drawio] Processing regex match: Captures({0: 86..133/"{{#drawio path=\"diagrams/hello.drawio\" page=0}}", 1: 102..123/"diagrams/hello.drawio", 2: 130..131/"0"})
+[2025-09-02T09:45:09Z DEBUG mdbook_drawio]   Relative path: diagrams/hello.drawio
+[2025-09-02T09:45:09Z DEBUG mdbook_drawio]   Page: 0
+[2025-09-02T09:45:09Z DEBUG mdbook_drawio]   Absolute path: "/home/runner/work/mdbook-drawio/mdbook-drawio/example/diagrams/hello.drawio"
+[2025-09-02T09:45:09Z DEBUG mdbook_drawio]   Diagram name: hello
+[2025-09-02T09:45:09Z DEBUG mdbook_drawio]   SVG filename: hello-page-0.svg
+[2025-09-02T09:45:09Z DEBUG mdbook_drawio]   SVG path: "/home/runner/work/mdbook-drawio/mdbook-drawio/example/src/gen/drawio/hello-page-0.svg"
+[2025-09-02T09:45:09Z DEBUG mdbook_drawio] Calculating relative path:
+[2025-09-02T09:45:09Z DEBUG mdbook_drawio]   Chapter path: Some("introduction.md")
+[2025-09-02T09:45:09Z DEBUG mdbook_drawio]   Target path: "/home/runner/work/mdbook-drawio/mdbook-drawio/example/src/gen/drawio/hello-page-0.svg"
+[2025-09-02T09:45:09Z DEBUG mdbook_drawio]   Target filename: hello-page-0.svg
+[2025-09-02T09:45:09Z DEBUG mdbook_drawio]   Chapter depth: 0
+[2025-09-02T09:45:09Z DEBUG mdbook_drawio]   Relative path from chapter: "./gen/drawio/hello-page-0.svg"
+[2025-09-02T09:45:09Z DEBUG mdbook_drawio]   Relative link from chapter: "./gen/drawio/hello-page-0.svg"
+[2025-09-02T09:45:09Z DEBUG mdbook_drawio] Executing drawio command:
+[2025-09-02T09:45:09Z DEBUG mdbook_drawio]   Command: drawio
+[2025-09-02T09:45:09Z DEBUG mdbook_drawio]   Input file: "/home/runner/work/mdbook-drawio/mdbook-drawio/example/diagrams/hello.drawio"
+[2025-09-02T09:45:09Z DEBUG mdbook_drawio]   Output file: "/home/runner/work/mdbook-drawio/mdbook-drawio/example/src/gen/drawio/hello-page-0.svg"
+[2025-09-02T09:45:09Z DEBUG mdbook_drawio]   Page: 0
+[2025-09-02T09:45:09Z DEBUG mdbook_drawio] Full command: ELECTRON_DISABLE_GPU="1" "drawio" "-x" "/home/runner/work/mdbook-drawio/mdbook-drawio/example/diagrams/hello.drawio" "-p" "0" "-f" "svg" "-o" "/home/runner/work/mdbook-drawio/mdbook-drawio/example/src/gen/drawio/hello-page-0.svg" "--no-sandbox"
+[2025-09-02T09:45:14Z DEBUG mdbook_drawio] Command exit status: ExitStatus(unix_wait_status(0))
+[2025-09-02T09:45:14Z DEBUG mdbook_drawio] Command stdout: /home/runner/work/mdbook-drawio/mdbook-drawio/example/diagrams/hello.drawio -> /home/runner/work/mdbook-drawio/mdbook-drawio/example/src/gen/drawio/hello-page-0.svg
     
-[2025-09-02T09:35:15Z DEBUG mdbook_drawio] Produced Markdown snippet for SVG: ![Diagram not found at ./gen/drawio/hello-page-0.svg](./gen/drawio/hello-page-0.svg)
-[2025-09-02T09:35:15Z DEBUG mdbook_drawio] Processing regex match: Captures({0: 135..192/"{{#drawio path=\"diagrams/subdiagrams/sub.drawio\" page=0}}", 1: 151..182/"diagrams/subdiagrams/sub.drawio", 2: 189..190/"0"})
-[2025-09-02T09:35:15Z DEBUG mdbook_drawio]   Relative path: diagrams/subdiagrams/sub.drawio
-[2025-09-02T09:35:15Z DEBUG mdbook_drawio]   Page: 0
-[2025-09-02T09:35:15Z DEBUG mdbook_drawio]   Absolute path: "/home/runner/work/mdbook-drawio/mdbook-drawio/example/diagrams/subdiagrams/sub.drawio"
-[2025-09-02T09:35:15Z DEBUG mdbook_drawio]   Diagram name: sub
-[2025-09-02T09:35:15Z DEBUG mdbook_drawio]   SVG filename: sub-page-0.svg
-[2025-09-02T09:35:15Z DEBUG mdbook_drawio]   SVG path: "/home/runner/work/mdbook-drawio/mdbook-drawio/example/src/gen/drawio/sub-page-0.svg"
-[2025-09-02T09:35:15Z DEBUG mdbook_drawio] Calculating relative path:
-[2025-09-02T09:35:15Z DEBUG mdbook_drawio]   Chapter path: Some("introduction.md")
-[2025-09-02T09:35:15Z DEBUG mdbook_drawio]   Target path: "/home/runner/work/mdbook-drawio/mdbook-drawio/example/src/gen/drawio/sub-page-0.svg"
-[2025-09-02T09:35:15Z DEBUG mdbook_drawio]   Target filename: sub-page-0.svg
-[2025-09-02T09:35:15Z DEBUG mdbook_drawio]   Chapter depth: 0
-[2025-09-02T09:35:15Z DEBUG mdbook_drawio]   Relative path from chapter: "./gen/drawio/sub-page-0.svg"
-[2025-09-02T09:35:15Z DEBUG mdbook_drawio]   Relative link from chapter: "./gen/drawio/sub-page-0.svg"
-[2025-09-02T09:35:15Z DEBUG mdbook_drawio] Executing drawio command:
-[2025-09-02T09:35:15Z DEBUG mdbook_drawio]   Command: drawio
-[2025-09-02T09:35:15Z DEBUG mdbook_drawio]   Input file: "/home/runner/work/mdbook-drawio/mdbook-drawio/example/diagrams/subdiagrams/sub.drawio"
-[2025-09-02T09:35:15Z DEBUG mdbook_drawio]   Output file: "/home/runner/work/mdbook-drawio/mdbook-drawio/example/src/gen/drawio/sub-page-0.svg"
-[2025-09-02T09:35:15Z DEBUG mdbook_drawio]   Page: 0
-[2025-09-02T09:35:15Z DEBUG mdbook_drawio] Full command: ELECTRON_DISABLE_GPU="1" "drawio" "-x" "/home/runner/work/mdbook-drawio/mdbook-drawio/example/diagrams/subdiagrams/sub.drawio" "-p" "0" "-f" "svg" "-o" "/home/runner/work/mdbook-drawio/mdbook-drawio/example/src/gen/drawio/sub-page-0.svg"
-[2025-09-02T09:35:19Z DEBUG mdbook_drawio] Command exit status: ExitStatus(unix_wait_status(34048))
-[2025-09-02T09:35:19Z DEBUG mdbook_drawio] Command stdout: 
-[2025-09-02T09:35:19Z DEBUG mdbook_drawio] Command stderr: [19674:0902/093518.772429:FATAL:setuid_sandbox_host.cc(163)] The SUID sandbox helper binary was found, but is not configured correctly. Rather than run without sandboxing I'm aborting now. You need to make sure that /nix/store/940abkm8x4jx6bykk3898pig6yn9df4k-electron-35.7.5/libexec/electron/chrome-sandbox is owned by root and has mode 4755.
-    /nix/store/cx972iah70rs2p9ksjzynk3qcd51ydhb-xvfb-run-1+g87f6705/bin/.xvfb-run-wrapped: line 181: 19674 Trace/breakpoint trap   (core dumped) DISPLAY=:$SERVERNUM XAUTHORITY=$AUTHFILE "$@"
+[2025-09-02T09:45:14Z DEBUG mdbook_drawio] Command stderr: [19618:0902/094513.268394:ERROR:bus.cc(408)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+    [19618:0902/094513.268466:ERROR:bus.cc(408)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+    [19618:0902/094513.268476:ERROR:bus.cc(408)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+    [19618:0902/094513.268485:ERROR:bus.cc(408)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+    [19618:0902/094513.268494:ERROR:object_proxy.cc(576)] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+    [19646:0902/094513.287365:ERROR:angle_platform_impl.cc(49)] Display.cpp:1085 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+    ERR: Display.cpp:1085 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+    [19646:0902/094513.287503:ERROR:gl_display.cc(495)] EGL Driver message (Critical) eglInitialize: GLX is not present.
+    [19646:0902/094513.287579:ERROR:gl_display.cc(767)] eglInitialize OpenGL failed with error EGL_NOT_INITIALIZED, trying next display type
+    [19646:0902/094513.287719:ERROR:angle_platform_impl.cc(49)] Display.cpp:1085 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+    ERR: Display.cpp:1085 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+    [19646:0902/094513.287777:ERROR:gl_display.cc(495)] EGL Driver message (Critical) eglInitialize: GLX is not present.
+    [19646:0902/094513.287828:ERROR:gl_display.cc(767)] eglInitialize OpenGLES failed with error EGL_NOT_INITIALIZED
+    [19646:0902/094513.287877:ERROR:gl_display.cc(802)] Initialization of all EGL display types failed.
+    [19646:0902/094513.287929:ERROR:gl_ozone_egl.cc(26)] GLDisplayEGL::Initialize failed.
+    [19646:0902/094513.288967:ERROR:angle_platform_impl.cc(49)] Display.cpp:1085 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+    ERR: Display.cpp:1085 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+    [19646:0902/094513.289030:ERROR:gl_display.cc(495)] EGL Driver message (Critical) eglInitialize: GLX is not present.
+    [19646:0902/094513.289081:ERROR:gl_display.cc(767)] eglInitialize OpenGL failed with error EGL_NOT_INITIALIZED, trying next display type
+    [19646:0902/094513.289186:ERROR:angle_platform_impl.cc(49)] Display.cpp:1085 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+    ERR: Display.cpp:1085 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+    [19646:0902/094513.289240:ERROR:gl_display.cc(495)] EGL Driver message (Critical) eglInitialize: GLX is not present.
+    [19646:0902/094513.289289:ERROR:gl_display.cc(767)] eglInitialize OpenGLES failed with error EGL_NOT_INITIALIZED
+    [19646:0902/094513.289337:ERROR:gl_display.cc(802)] Initialization of all EGL display types failed.
+    [19646:0902/094513.289417:ERROR:gl_ozone_egl.cc(26)] GLDisplayEGL::Initialize failed.
+    [19646:0902/094513.290811:ERROR:viz_main_impl.cc(183)] Exiting GPU process due to errors during initialization
+    [19618:0902/094513.478493:ERROR:bus.cc(408)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+    [19618:0902/094513.516997:ERROR:bus.cc(408)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+    [19671:0902/094513.541763:ERROR:angle_platform_impl.cc(49)] Display.cpp:1085 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+    ERR: Display.cpp:1085 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+    [19671:0902/094513.541889:ERROR:gl_display.cc(495)] EGL Driver message (Critical) eglInitialize: GLX is not present.
+    [19671:0902/094513.541976:ERROR:gl_display.cc(767)] eglInitialize OpenGL failed with error EGL_NOT_INITIALIZED, trying next display type
+    [19671:0902/094513.542132:ERROR:angle_platform_impl.cc(49)] Display.cpp:1085 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+    ERR: Display.cpp:1085 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+    [19671:0902/094513.542215:ERROR:gl_display.cc(495)] EGL Driver message (Critical) eglInitialize: GLX is not present.
+    [19671:0902/094513.542265:ERROR:gl_display.cc(767)] eglInitialize OpenGLES failed with error EGL_NOT_INITIALIZED
+    [19671:0902/094513.542338:ERROR:gl_display.cc(802)] Initialization of all EGL display types failed.
+    [19671:0902/094513.542404:ERROR:gl_ozone_egl.cc(26)] GLDisplayEGL::Initialize failed.
+    [19671:0902/094513.543805:ERROR:angle_platform_impl.cc(49)] Display.cpp:1085 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+    ERR: Display.cpp:1085 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+    [19671:0902/094513.543889:ERROR:gl_display.cc(495)] EGL Driver message (Critical) eglInitialize: GLX is not present.
+    [19671:0902/094513.543959:ERROR:gl_display.cc(767)] eglInitialize OpenGL failed with error EGL_NOT_INITIALIZED, trying next display type
+    [19671:0902/094513.544075:ERROR:angle_platform_impl.cc(49)] Display.cpp:1085 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+    ERR: Display.cpp:1085 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+    [19671:0902/094513.544145:ERROR:gl_display.cc(495)] EGL Driver message (Critical) eglInitialize: GLX is not present.
+    [19671:0902/094513.544224:ERROR:gl_display.cc(767)] eglInitialize OpenGLES failed with error EGL_NOT_INITIALIZED
+    [19671:0902/094513.544274:ERROR:gl_display.cc(802)] Initialization of all EGL display types failed.
+    [19671:0902/094513.544338:ERROR:gl_ozone_egl.cc(26)] GLDisplayEGL::Initialize failed.
+    [19671:0902/094513.546256:ERROR:viz_main_impl.cc(183)] Exiting GPU process due to errors during initialization
+    [19670:0902/094513.591488:ERROR:command_buffer_proxy_impl.cc(125)] ContextResult::kTransientFailure: Failed to send GpuControl.CreateCommandBuffer.
     
-[2025-09-02T09:35:19Z DEBUG mdbook_drawio] Produced Markdown snippet for SVG: ![Diagram not found at ./gen/drawio/sub-page-0.svg](./gen/drawio/sub-page-0.svg)
-[2025-09-02T09:35:19Z DEBUG mdbook_drawio] Processing regex match: Captures({0: 15..62/"{{#drawio path=\"diagrams/hello.drawio\" page=1}}", 1: 31..52/"diagrams/hello.drawio", 2: 59..60/"1"})
-[2025-09-02T09:35:19Z DEBUG mdbook_drawio]   Relative path: diagrams/hello.drawio
-[2025-09-02T09:35:19Z DEBUG mdbook_drawio]   Page: 1
-[2025-09-02T09:35:19Z DEBUG mdbook_drawio]   Absolute path: "/home/runner/work/mdbook-drawio/mdbook-drawio/example/diagrams/hello.drawio"
-[2025-09-02T09:35:19Z DEBUG mdbook_drawio]   Diagram name: hello
-[2025-09-02T09:35:19Z DEBUG mdbook_drawio]   SVG filename: hello-page-1.svg
-[2025-09-02T09:35:19Z DEBUG mdbook_drawio]   SVG path: "/home/runner/work/mdbook-drawio/mdbook-drawio/example/src/gen/drawio/hello-page-1.svg"
-[2025-09-02T09:35:19Z DEBUG mdbook_drawio] Calculating relative path:
-[2025-09-02T09:35:19Z DEBUG mdbook_drawio]   Chapter path: Some("chapter/subchapter.md")
-[2025-09-02T09:35:19Z DEBUG mdbook_drawio]   Target path: "/home/runner/work/mdbook-drawio/mdbook-drawio/example/src/gen/drawio/hello-page-1.svg"
-[2025-09-02T09:35:19Z DEBUG mdbook_drawio]   Target filename: hello-page-1.svg
-[2025-09-02T09:35:19Z DEBUG mdbook_drawio]   Chapter depth: 1
-[2025-09-02T09:35:19Z DEBUG mdbook_drawio]   Relative path from chapter: "../gen/drawio/hello-page-1.svg"
-[2025-09-02T09:35:19Z DEBUG mdbook_drawio]   Relative link from chapter: "../gen/drawio/hello-page-1.svg"
-[2025-09-02T09:35:19Z DEBUG mdbook_drawio] Executing drawio command:
-[2025-09-02T09:35:19Z DEBUG mdbook_drawio]   Command: drawio
-[2025-09-02T09:35:19Z DEBUG mdbook_drawio]   Input file: "/home/runner/work/mdbook-drawio/mdbook-drawio/example/diagrams/hello.drawio"
-[2025-09-02T09:35:19Z DEBUG mdbook_drawio]   Output file: "/home/runner/work/mdbook-drawio/mdbook-drawio/example/src/gen/drawio/hello-page-1.svg"
-[2025-09-02T09:35:19Z DEBUG mdbook_drawio]   Page: 1
-[2025-09-02T09:35:19Z DEBUG mdbook_drawio] Full command: ELECTRON_DISABLE_GPU="1" "drawio" "-x" "/home/runner/work/mdbook-drawio/mdbook-drawio/example/diagrams/hello.drawio" "-p" "1" "-f" "svg" "-o" "/home/runner/work/mdbook-drawio/mdbook-drawio/example/src/gen/drawio/hello-page-1.svg"
-[2025-09-02T09:35:24Z DEBUG mdbook_drawio] Command exit status: ExitStatus(unix_wait_status(34048))
-[2025-09-02T09:35:24Z DEBUG mdbook_drawio] Command stdout: 
-[2025-09-02T09:35:24Z DEBUG mdbook_drawio] Command stderr: [19713:0902/093523.065723:FATAL:setuid_sandbox_host.cc(163)] The SUID sandbox helper binary was found, but is not configured correctly. Rather than run without sandboxing I'm aborting now. You need to make sure that /nix/store/940abkm8x4jx6bykk3898pig6yn9df4k-electron-35.7.5/libexec/electron/chrome-sandbox is owned by root and has mode 4755.
-    /nix/store/cx972iah70rs2p9ksjzynk3qcd51ydhb-xvfb-run-1+g87f6705/bin/.xvfb-run-wrapped: line 181: 19713 Trace/breakpoint trap   (core dumped) DISPLAY=:$SERVERNUM XAUTHORITY=$AUTHFILE "$@"
+[2025-09-02T09:45:14Z DEBUG mdbook_drawio] Produced Markdown snippet for SVG: ![Diagram not found at ./gen/drawio/hello-page-0.svg](./gen/drawio/hello-page-0.svg)
+[2025-09-02T09:45:14Z DEBUG mdbook_drawio] Processing regex match: Captures({0: 135..192/"{{#drawio path=\"diagrams/subdiagrams/sub.drawio\" page=0}}", 1: 151..182/"diagrams/subdiagrams/sub.drawio", 2: 189..190/"0"})
+[2025-09-02T09:45:14Z DEBUG mdbook_drawio]   Relative path: diagrams/subdiagrams/sub.drawio
+[2025-09-02T09:45:14Z DEBUG mdbook_drawio]   Page: 0
+[2025-09-02T09:45:14Z DEBUG mdbook_drawio]   Absolute path: "/home/runner/work/mdbook-drawio/mdbook-drawio/example/diagrams/subdiagrams/sub.drawio"
+[2025-09-02T09:45:14Z DEBUG mdbook_drawio]   Diagram name: sub
+[2025-09-02T09:45:14Z DEBUG mdbook_drawio]   SVG filename: sub-page-0.svg
+[2025-09-02T09:45:14Z DEBUG mdbook_drawio]   SVG path: "/home/runner/work/mdbook-drawio/mdbook-drawio/example/src/gen/drawio/sub-page-0.svg"
+[2025-09-02T09:45:14Z DEBUG mdbook_drawio] Calculating relative path:
+[2025-09-02T09:45:14Z DEBUG mdbook_drawio]   Chapter path: Some("introduction.md")
+[2025-09-02T09:45:14Z DEBUG mdbook_drawio]   Target path: "/home/runner/work/mdbook-drawio/mdbook-drawio/example/src/gen/drawio/sub-page-0.svg"
+[2025-09-02T09:45:14Z DEBUG mdbook_drawio]   Target filename: sub-page-0.svg
+[2025-09-02T09:45:14Z DEBUG mdbook_drawio]   Chapter depth: 0
+[2025-09-02T09:45:14Z DEBUG mdbook_drawio]   Relative path from chapter: "./gen/drawio/sub-page-0.svg"
+[2025-09-02T09:45:14Z DEBUG mdbook_drawio]   Relative link from chapter: "./gen/drawio/sub-page-0.svg"
+[2025-09-02T09:45:14Z DEBUG mdbook_drawio] Executing drawio command:
+[2025-09-02T09:45:14Z DEBUG mdbook_drawio]   Command: drawio
+[2025-09-02T09:45:14Z DEBUG mdbook_drawio]   Input file: "/home/runner/work/mdbook-drawio/mdbook-drawio/example/diagrams/subdiagrams/sub.drawio"
+[2025-09-02T09:45:14Z DEBUG mdbook_drawio]   Output file: "/home/runner/work/mdbook-drawio/mdbook-drawio/example/src/gen/drawio/sub-page-0.svg"
+[2025-09-02T09:45:14Z DEBUG mdbook_drawio]   Page: 0
+[2025-09-02T09:45:14Z DEBUG mdbook_drawio] Full command: ELECTRON_DISABLE_GPU="1" "drawio" "-x" "/home/runner/work/mdbook-drawio/mdbook-drawio/example/diagrams/subdiagrams/sub.drawio" "-p" "0" "-f" "svg" "-o" "/home/runner/work/mdbook-drawio/mdbook-drawio/example/src/gen/drawio/sub-page-0.svg" "--no-sandbox"
+[2025-09-02T09:45:18Z DEBUG mdbook_drawio] Command exit status: ExitStatus(unix_wait_status(0))
+[2025-09-02T09:45:18Z DEBUG mdbook_drawio] Command stdout: /home/runner/work/mdbook-drawio/mdbook-drawio/example/diagrams/subdiagrams/sub.drawio -> /home/runner/work/mdbook-drawio/mdbook-drawio/example/src/gen/drawio/sub-page-0.svg
     
-[2025-09-02T09:35:24Z DEBUG mdbook_drawio] Produced Markdown snippet for SVG: ![Diagram not found at ../gen/drawio/hello-page-1.svg](../gen/drawio/hello-page-1.svg)
-[2025-09-02T09:35:24Z DEBUG mdbook_drawio] Processing regex match: Captures({0: 51..98/"{{#drawio path=\"diagrams/hello.drawio\" page=0}}", 1: 67..88/"diagrams/hello.drawio", 2: 95..96/"0"})
-[2025-09-02T09:35:24Z DEBUG mdbook_drawio]   Relative path: diagrams/hello.drawio
-[2025-09-02T09:35:24Z DEBUG mdbook_drawio]   Page: 0
-[2025-09-02T09:35:24Z DEBUG mdbook_drawio]   Absolute path: "/home/runner/work/mdbook-drawio/mdbook-drawio/example/diagrams/hello.drawio"
-[2025-09-02T09:35:24Z DEBUG mdbook_drawio]   Diagram name: hello
-[2025-09-02T09:35:24Z DEBUG mdbook_drawio]   SVG filename: hello-page-0.svg
-[2025-09-02T09:35:24Z DEBUG mdbook_drawio]   SVG path: "/home/runner/work/mdbook-drawio/mdbook-drawio/example/src/gen/drawio/hello-page-0.svg"
-[2025-09-02T09:35:24Z DEBUG mdbook_drawio] Calculating relative path:
-[2025-09-02T09:35:24Z DEBUG mdbook_drawio]   Chapter path: Some("chapter/subchapter/subchapter2.md")
-[2025-09-02T09:35:24Z DEBUG mdbook_drawio]   Target path: "/home/runner/work/mdbook-drawio/mdbook-drawio/example/src/gen/drawio/hello-page-0.svg"
-[2025-09-02T09:35:24Z DEBUG mdbook_drawio]   Target filename: hello-page-0.svg
-[2025-09-02T09:35:24Z DEBUG mdbook_drawio]   Chapter depth: 2
-[2025-09-02T09:35:24Z DEBUG mdbook_drawio]   Relative path from chapter: "../../gen/drawio/hello-page-0.svg"
-[2025-09-02T09:35:24Z DEBUG mdbook_drawio]   Relative link from chapter: "../../gen/drawio/hello-page-0.svg"
-[2025-09-02T09:35:24Z DEBUG mdbook_drawio] Executing drawio command:
-[2025-09-02T09:35:24Z DEBUG mdbook_drawio]   Command: drawio
-[2025-09-02T09:35:24Z DEBUG mdbook_drawio]   Input file: "/home/runner/work/mdbook-drawio/mdbook-drawio/example/diagrams/hello.drawio"
-[2025-09-02T09:35:24Z DEBUG mdbook_drawio]   Output file: "/home/runner/work/mdbook-drawio/mdbook-drawio/example/src/gen/drawio/hello-page-0.svg"
-[2025-09-02T09:35:24Z DEBUG mdbook_drawio]   Page: 0
-[2025-09-02T09:35:24Z DEBUG mdbook_drawio] Full command: ELECTRON_DISABLE_GPU="1" "drawio" "-x" "/home/runner/work/mdbook-drawio/mdbook-drawio/example/diagrams/hello.drawio" "-p" "0" "-f" "svg" "-o" "/home/runner/work/mdbook-drawio/mdbook-drawio/example/src/gen/drawio/hello-page-0.svg"
-[2025-09-02T09:35:28Z DEBUG mdbook_drawio] Command exit status: ExitStatus(unix_wait_status(34048))
-[2025-09-02T09:35:28Z DEBUG mdbook_drawio] Command stdout: 
-[2025-09-02T09:35:28Z DEBUG mdbook_drawio] Command stderr: [19753:0902/093527.375667:FATAL:setuid_sandbox_host.cc(163)] The SUID sandbox helper binary was found, but is not configured correctly. Rather than run without sandboxing I'm aborting now. You need to make sure that /nix/store/940abkm8x4jx6bykk3898pig6yn9df4k-electron-35.7.5/libexec/electron/chrome-sandbox is owned by root and has mode 4755.
-    /nix/store/cx972iah70rs2p9ksjzynk3qcd51ydhb-xvfb-run-1+g87f6705/bin/.xvfb-run-wrapped: line 181: 19753 Trace/breakpoint trap   (core dumped) DISPLAY=:$SERVERNUM XAUTHORITY=$AUTHFILE "$@"
+[2025-09-02T09:45:18Z DEBUG mdbook_drawio] Command stderr: [19726:0902/094517.897352:ERROR:bus.cc(408)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+    [19726:0902/094517.897491:ERROR:bus.cc(408)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+    [19726:0902/094517.897502:ERROR:bus.cc(408)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+    [19726:0902/094517.897509:ERROR:bus.cc(408)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+    [19726:0902/094517.897518:ERROR:object_proxy.cc(576)] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+    [19754:0902/094517.911918:ERROR:angle_platform_impl.cc(49)] Display.cpp:1085 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+    ERR: Display.cpp:1085 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+    [19754:0902/094517.912033:ERROR:gl_display.cc(495)] EGL Driver message (Critical) eglInitialize: GLX is not present.
+    [19754:0902/094517.912096:ERROR:gl_display.cc(767)] eglInitialize OpenGL failed with error EGL_NOT_INITIALIZED, trying next display type
+    [19754:0902/094517.912232:ERROR:angle_platform_impl.cc(49)] Display.cpp:1085 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+    ERR: Display.cpp:1085 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+    [19754:0902/094517.912295:ERROR:gl_display.cc(495)] EGL Driver message (Critical) eglInitialize: GLX is not present.
+    [19754:0902/094517.912346:ERROR:gl_display.cc(767)] eglInitialize OpenGLES failed with error EGL_NOT_INITIALIZED
+    [19754:0902/094517.912397:ERROR:gl_display.cc(802)] Initialization of all EGL display types failed.
+    [19754:0902/094517.912449:ERROR:gl_ozone_egl.cc(26)] GLDisplayEGL::Initialize failed.
+    [19754:0902/094517.913596:ERROR:angle_platform_impl.cc(49)] Display.cpp:1085 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+    ERR: Display.cpp:1085 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+    [19754:0902/094517.913668:ERROR:gl_display.cc(495)] EGL Driver message (Critical) eglInitialize: GLX is not present.
+    [19754:0902/094517.913723:ERROR:gl_display.cc(767)] eglInitialize OpenGL failed with error EGL_NOT_INITIALIZED, trying next display type
+    [19754:0902/094517.913832:ERROR:angle_platform_impl.cc(49)] Display.cpp:1085 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+    ERR: Display.cpp:1085 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+    [19754:0902/094517.913891:ERROR:gl_display.cc(495)] EGL Driver message (Critical) eglInitialize: GLX is not present.
+    [19754:0902/094517.913944:ERROR:gl_display.cc(767)] eglInitialize OpenGLES failed with error EGL_NOT_INITIALIZED
+    [19754:0902/094517.913996:ERROR:gl_display.cc(802)] Initialization of all EGL display types failed.
+    [19754:0902/094517.914048:ERROR:gl_ozone_egl.cc(26)] GLDisplayEGL::Initialize failed.
+    [19754:0902/094517.917398:ERROR:viz_main_impl.cc(183)] Exiting GPU process due to errors during initialization
+    [19726:0902/094517.934946:ERROR:bus.cc(408)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+    [19726:0902/094517.947684:ERROR:bus.cc(408)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+    [19771:0902/094517.973099:ERROR:angle_platform_impl.cc(49)] Display.cpp:1085 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+    ERR: Display.cpp:1085 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+    [19771:0902/094517.973216:ERROR:gl_display.cc(495)] EGL Driver message (Critical) eglInitialize: GLX is not present.
+    [19771:0902/094517.973298:ERROR:gl_display.cc(767)] eglInitialize OpenGL failed with error EGL_NOT_INITIALIZED, trying next display type
+    [19771:0902/094517.973450:ERROR:angle_platform_impl.cc(49)] Display.cpp:1085 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+    ERR: Display.cpp:1085 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+    [19771:0902/094517.973533:ERROR:gl_display.cc(495)] EGL Driver message (Critical) eglInitialize: GLX is not present.
+    [19771:0902/094517.973645:ERROR:gl_display.cc(767)] eglInitialize OpenGLES failed with error EGL_NOT_INITIALIZED
+    [19771:0902/094517.973692:ERROR:gl_display.cc(802)] Initialization of all EGL display types failed.
+    [19771:0902/094517.973773:ERROR:gl_ozone_egl.cc(26)] GLDisplayEGL::Initialize failed.
+    [19771:0902/094517.975034:ERROR:angle_platform_impl.cc(49)] Display.cpp:1085 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+    ERR: Display.cpp:1085 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+    [19771:0902/094517.975113:ERROR:gl_display.cc(495)] EGL Driver message (Critical) eglInitialize: GLX is not present.
+    [19771:0902/094517.975181:ERROR:gl_display.cc(767)] eglInitialize OpenGL failed with error EGL_NOT_INITIALIZED, trying next display type
+    [19771:0902/094517.975292:ERROR:angle_platform_impl.cc(49)] Display.cpp:1085 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+    ERR: Display.cpp:1085 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+    [19771:0902/094517.975360:ERROR:gl_display.cc(495)] EGL Driver message (Critical) eglInitialize: GLX is not present.
+    [19771:0902/094517.975429:ERROR:gl_display.cc(767)] eglInitialize OpenGLES failed with error EGL_NOT_INITIALIZED
+    [19771:0902/094517.975486:ERROR:gl_display.cc(802)] Initialization of all EGL display types failed.
+    [19771:0902/094517.975540:ERROR:gl_ozone_egl.cc(26)] GLDisplayEGL::Initialize failed.
+    [19771:0902/094517.977636:ERROR:viz_main_impl.cc(183)] Exiting GPU process due to errors during initialization
+    [19770:0902/094518.020142:ERROR:command_buffer_proxy_impl.cc(125)] ContextResult::kTransientFailure: Failed to send GpuControl.CreateCommandBuffer.
     
-[2025-09-02T09:35:28Z DEBUG mdbook_drawio] Produced Markdown snippet for SVG: ![Diagram not found at ../../gen/drawio/hello-page-0.svg](../../gen/drawio/hello-page-0.svg)
-[2025-09-02T09:35:28Z DEBUG mdbook_drawio] Preprocessing completed successfully
+[2025-09-02T09:45:18Z DEBUG mdbook_drawio] Produced Markdown snippet for SVG: ![Diagram not found at ./gen/drawio/sub-page-0.svg](./gen/drawio/sub-page-0.svg)
+[2025-09-02T09:45:18Z DEBUG mdbook_drawio] Processing regex match: Captures({0: 15..62/"{{#drawio path=\"diagrams/hello.drawio\" page=1}}", 1: 31..52/"diagrams/hello.drawio", 2: 59..60/"1"})
+[2025-09-02T09:45:18Z DEBUG mdbook_drawio]   Relative path: diagrams/hello.drawio
+[2025-09-02T09:45:18Z DEBUG mdbook_drawio]   Page: 1
+[2025-09-02T09:45:18Z DEBUG mdbook_drawio]   Absolute path: "/home/runner/work/mdbook-drawio/mdbook-drawio/example/diagrams/hello.drawio"
+[2025-09-02T09:45:18Z DEBUG mdbook_drawio]   Diagram name: hello
+[2025-09-02T09:45:18Z DEBUG mdbook_drawio]   SVG filename: hello-page-1.svg
+[2025-09-02T09:45:18Z DEBUG mdbook_drawio]   SVG path: "/home/runner/work/mdbook-drawio/mdbook-drawio/example/src/gen/drawio/hello-page-1.svg"
+[2025-09-02T09:45:18Z DEBUG mdbook_drawio] Calculating relative path:
+[2025-09-02T09:45:18Z DEBUG mdbook_drawio]   Chapter path: Some("chapter/subchapter.md")
+[2025-09-02T09:45:18Z DEBUG mdbook_drawio]   Target path: "/home/runner/work/mdbook-drawio/mdbook-drawio/example/src/gen/drawio/hello-page-1.svg"
+[2025-09-02T09:45:18Z DEBUG mdbook_drawio]   Target filename: hello-page-1.svg
+[2025-09-02T09:45:18Z DEBUG mdbook_drawio]   Chapter depth: 1
+[2025-09-02T09:45:18Z DEBUG mdbook_drawio]   Relative path from chapter: "../gen/drawio/hello-page-1.svg"
+[2025-09-02T09:45:18Z DEBUG mdbook_drawio]   Relative link from chapter: "../gen/drawio/hello-page-1.svg"
+[2025-09-02T09:45:18Z DEBUG mdbook_drawio] Executing drawio command:
+[2025-09-02T09:45:18Z DEBUG mdbook_drawio]   Command: drawio
+[2025-09-02T09:45:18Z DEBUG mdbook_drawio]   Input file: "/home/runner/work/mdbook-drawio/mdbook-drawio/example/diagrams/hello.drawio"
+[2025-09-02T09:45:18Z DEBUG mdbook_drawio]   Output file: "/home/runner/work/mdbook-drawio/mdbook-drawio/example/src/gen/drawio/hello-page-1.svg"
+[2025-09-02T09:45:18Z DEBUG mdbook_drawio]   Page: 1
+[2025-09-02T09:45:18Z DEBUG mdbook_drawio] Full command: ELECTRON_DISABLE_GPU="1" "drawio" "-x" "/home/runner/work/mdbook-drawio/mdbook-drawio/example/diagrams/hello.drawio" "-p" "1" "-f" "svg" "-o" "/home/runner/work/mdbook-drawio/mdbook-drawio/example/src/gen/drawio/hello-page-1.svg" "--no-sandbox"
+[2025-09-02T09:45:22Z DEBUG mdbook_drawio] Command exit status: ExitStatus(unix_wait_status(0))
+[2025-09-02T09:45:22Z DEBUG mdbook_drawio] Command stdout: /home/runner/work/mdbook-drawio/mdbook-drawio/example/diagrams/hello.drawio -> /home/runner/work/mdbook-drawio/mdbook-drawio/example/src/gen/drawio/hello-page-1.svg
+    
+[2025-09-02T09:45:22Z DEBUG mdbook_drawio] Command stderr: [19832:0902/094522.300634:ERROR:bus.cc(408)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+    [19832:0902/094522.300761:ERROR:bus.cc(408)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+    [19832:0902/094522.300773:ERROR:bus.cc(408)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+    [19832:0902/094522.300783:ERROR:bus.cc(408)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+    [19832:0902/094522.300792:ERROR:object_proxy.cc(576)] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+    [19861:0902/094522.314108:ERROR:angle_platform_impl.cc(49)] Display.cpp:1085 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+    ERR: Display.cpp:1085 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+    [19861:0902/094522.317393:ERROR:gl_display.cc(495)] EGL Driver message (Critical) eglInitialize: GLX is not present.
+    [19861:0902/094522.317979:ERROR:gl_display.cc(767)] eglInitialize OpenGL failed with error EGL_NOT_INITIALIZED, trying next display type
+    [19861:0902/094522.319183:ERROR:angle_platform_impl.cc(49)] Display.cpp:1085 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+    ERR: Display.cpp:1085 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+    [19861:0902/094522.319390:ERROR:gl_display.cc(495)] EGL Driver message (Critical) eglInitialize: GLX is not present.
+    [19861:0902/094522.319444:ERROR:gl_display.cc(767)] eglInitialize OpenGLES failed with error EGL_NOT_INITIALIZED
+    [19861:0902/094522.319516:ERROR:gl_display.cc(802)] Initialization of all EGL display types failed.
+    [19861:0902/094522.319714:ERROR:gl_ozone_egl.cc(26)] GLDisplayEGL::Initialize failed.
+    [19861:0902/094522.322269:ERROR:angle_platform_impl.cc(49)] Display.cpp:1085 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+    ERR: Display.cpp:1085 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+    [19861:0902/094522.322426:ERROR:gl_display.cc(495)] EGL Driver message (Critical) eglInitialize: GLX is not present.
+    [19861:0902/094522.322485:ERROR:gl_display.cc(767)] eglInitialize OpenGL failed with error EGL_NOT_INITIALIZED, trying next display type
+    [19861:0902/094522.322618:ERROR:angle_platform_impl.cc(49)] Display.cpp:1085 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+    ERR: Display.cpp:1085 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+    [19861:0902/094522.322934:ERROR:gl_display.cc(495)] EGL Driver message (Critical) eglInitialize: GLX is not present.
+    [19861:0902/094522.322987:ERROR:gl_display.cc(767)] eglInitialize OpenGLES failed with error EGL_NOT_INITIALIZED
+    [19861:0902/094522.323104:ERROR:gl_display.cc(802)] Initialization of all EGL display types failed.
+    [19861:0902/094522.323340:ERROR:gl_ozone_egl.cc(26)] GLDisplayEGL::Initialize failed.
+    [19861:0902/094522.325611:ERROR:viz_main_impl.cc(183)] Exiting GPU process due to errors during initialization
+    [19832:0902/094522.336490:ERROR:bus.cc(408)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+    [19832:0902/094522.349690:ERROR:bus.cc(408)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+    [19878:0902/094522.378163:ERROR:angle_platform_impl.cc(49)] Display.cpp:1085 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+    ERR: Display.cpp:1085 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+    [19878:0902/094522.378269:ERROR:gl_display.cc(495)] EGL Driver message (Critical) eglInitialize: GLX is not present.
+    [19878:0902/094522.378342:ERROR:gl_display.cc(767)] eglInitialize OpenGL failed with error EGL_NOT_INITIALIZED, trying next display type
+    [19878:0902/094522.378477:ERROR:angle_platform_impl.cc(49)] Display.cpp:1085 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+    ERR: Display.cpp:1085 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+    [19878:0902/094522.378539:ERROR:gl_display.cc(495)] EGL Driver message (Critical) eglInitialize: GLX is not present.
+    [19878:0902/094522.378625:ERROR:gl_display.cc(767)] eglInitialize OpenGLES failed with error EGL_NOT_INITIALIZED
+    [19878:0902/094522.378679:ERROR:gl_display.cc(802)] Initialization of all EGL display types failed.
+    [19878:0902/094522.378737:ERROR:gl_ozone_egl.cc(26)] GLDisplayEGL::Initialize failed.
+    [19878:0902/094522.380128:ERROR:angle_platform_impl.cc(49)] Display.cpp:1085 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+    ERR: Display.cpp:1085 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+    [19878:0902/094522.380212:ERROR:gl_display.cc(495)] EGL Driver message (Critical) eglInitialize: GLX is not present.
+    [19878:0902/094522.380308:ERROR:gl_display.cc(767)] eglInitialize OpenGL failed with error EGL_NOT_INITIALIZED, trying next display type
+    [19878:0902/094522.380465:ERROR:angle_platform_impl.cc(49)] Display.cpp:1085 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+    ERR: Display.cpp:1085 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+    [19878:0902/094522.380618:ERROR:gl_display.cc(495)] EGL Driver message (Critical) eglInitialize: GLX is not present.
+    [19878:0902/094522.380681:ERROR:gl_display.cc(767)] eglInitialize OpenGLES failed with error EGL_NOT_INITIALIZED
+    [19878:0902/094522.380746:ERROR:gl_display.cc(802)] Initialization of all EGL display types failed.
+    [19878:0902/094522.380813:ERROR:gl_ozone_egl.cc(26)] GLDisplayEGL::Initialize failed.
+    [19878:0902/094522.382613:ERROR:viz_main_impl.cc(183)] Exiting GPU process due to errors during initialization
+    [19877:0902/094522.428234:ERROR:command_buffer_proxy_impl.cc(125)] ContextResult::kTransientFailure: Failed to send GpuControl.CreateCommandBuffer.
+    
+[2025-09-02T09:45:22Z DEBUG mdbook_drawio] Produced Markdown snippet for SVG: ![Diagram not found at ../gen/drawio/hello-page-1.svg](../gen/drawio/hello-page-1.svg)
+[2025-09-02T09:45:22Z DEBUG mdbook_drawio] Processing regex match: Captures({0: 51..98/"{{#drawio path=\"diagrams/hello.drawio\" page=0}}", 1: 67..88/"diagrams/hello.drawio", 2: 95..96/"0"})
+[2025-09-02T09:45:22Z DEBUG mdbook_drawio]   Relative path: diagrams/hello.drawio
+[2025-09-02T09:45:22Z DEBUG mdbook_drawio]   Page: 0
+[2025-09-02T09:45:22Z DEBUG mdbook_drawio]   Absolute path: "/home/runner/work/mdbook-drawio/mdbook-drawio/example/diagrams/hello.drawio"
+[2025-09-02T09:45:22Z DEBUG mdbook_drawio]   Diagram name: hello
+[2025-09-02T09:45:22Z DEBUG mdbook_drawio]   SVG filename: hello-page-0.svg
+[2025-09-02T09:45:22Z DEBUG mdbook_drawio]   SVG path: "/home/runner/work/mdbook-drawio/mdbook-drawio/example/src/gen/drawio/hello-page-0.svg"
+[2025-09-02T09:45:22Z DEBUG mdbook_drawio] Calculating relative path:
+[2025-09-02T09:45:22Z DEBUG mdbook_drawio]   Chapter path: Some("chapter/subchapter/subchapter2.md")
+[2025-09-02T09:45:22Z DEBUG mdbook_drawio]   Target path: "/home/runner/work/mdbook-drawio/mdbook-drawio/example/src/gen/drawio/hello-page-0.svg"
+[2025-09-02T09:45:22Z DEBUG mdbook_drawio]   Target filename: hello-page-0.svg
+[2025-09-02T09:45:22Z DEBUG mdbook_drawio]   Chapter depth: 2
+[2025-09-02T09:45:22Z DEBUG mdbook_drawio]   Relative path from chapter: "../../gen/drawio/hello-page-0.svg"
+[2025-09-02T09:45:22Z DEBUG mdbook_drawio]   Relative link from chapter: "../../gen/drawio/hello-page-0.svg"
+[2025-09-02T09:45:22Z DEBUG mdbook_drawio] Executing drawio command:
+[2025-09-02T09:45:22Z DEBUG mdbook_drawio]   Command: drawio
+[2025-09-02T09:45:22Z DEBUG mdbook_drawio]   Input file: "/home/runner/work/mdbook-drawio/mdbook-drawio/example/diagrams/hello.drawio"
+[2025-09-02T09:45:22Z DEBUG mdbook_drawio]   Output file: "/home/runner/work/mdbook-drawio/mdbook-drawio/example/src/gen/drawio/hello-page-0.svg"
+[2025-09-02T09:45:22Z DEBUG mdbook_drawio]   Page: 0
+[2025-09-02T09:45:22Z DEBUG mdbook_drawio] Full command: ELECTRON_DISABLE_GPU="1" "drawio" "-x" "/home/runner/work/mdbook-drawio/mdbook-drawio/example/diagrams/hello.drawio" "-p" "0" "-f" "svg" "-o" "/home/runner/work/mdbook-drawio/mdbook-drawio/example/src/gen/drawio/hello-page-0.svg" "--no-sandbox"
+[2025-09-02T09:45:27Z DEBUG mdbook_drawio] Command exit status: ExitStatus(unix_wait_status(0))
+[2025-09-02T09:45:27Z DEBUG mdbook_drawio] Command stdout: /home/runner/work/mdbook-drawio/mdbook-drawio/example/diagrams/hello.drawio -> /home/runner/work/mdbook-drawio/mdbook-drawio/example/src/gen/drawio/hello-page-0.svg
+    
+[2025-09-02T09:45:27Z DEBUG mdbook_drawio] Command stderr: [19937:0902/094526.724392:ERROR:bus.cc(408)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+    [19937:0902/094526.724569:ERROR:bus.cc(408)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+    [19937:0902/094526.724633:ERROR:bus.cc(408)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+    [19937:0902/094526.724681:ERROR:bus.cc(408)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+    [19937:0902/094526.724703:ERROR:object_proxy.cc(576)] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+    [19965:0902/094526.737908:ERROR:angle_platform_impl.cc(49)] Display.cpp:1085 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+    ERR: Display.cpp:1085 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+    [19965:0902/094526.738041:ERROR:gl_display.cc(495)] EGL Driver message (Critical) eglInitialize: GLX is not present.
+    [19965:0902/094526.738105:ERROR:gl_display.cc(767)] eglInitialize OpenGL failed with error EGL_NOT_INITIALIZED, trying next display type
+    [19965:0902/094526.738304:ERROR:angle_platform_impl.cc(49)] Display.cpp:1085 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+    ERR: Display.cpp:1085 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+    [19965:0902/094526.738355:ERROR:gl_display.cc(495)] EGL Driver message (Critical) eglInitialize: GLX is not present.
+    [19965:0902/094526.738410:ERROR:gl_display.cc(767)] eglInitialize OpenGLES failed with error EGL_NOT_INITIALIZED
+    [19965:0902/094526.738461:ERROR:gl_display.cc(802)] Initialization of all EGL display types failed.
+    [19965:0902/094526.738513:ERROR:gl_ozone_egl.cc(26)] GLDisplayEGL::Initialize failed.
+    [19965:0902/094526.739813:ERROR:angle_platform_impl.cc(49)] Display.cpp:1085 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+    ERR: Display.cpp:1085 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+    [19965:0902/094526.739878:ERROR:gl_display.cc(495)] EGL Driver message (Critical) eglInitialize: GLX is not present.
+    [19965:0902/094526.739936:ERROR:gl_display.cc(767)] eglInitialize OpenGL failed with error EGL_NOT_INITIALIZED, trying next display type
+    [19965:0902/094526.740028:ERROR:angle_platform_impl.cc(49)] Display.cpp:1085 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+    ERR: Display.cpp:1085 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+    [19965:0902/094526.740085:ERROR:gl_display.cc(495)] EGL Driver message (Critical) eglInitialize: GLX is not present.
+    [19965:0902/094526.740141:ERROR:gl_display.cc(767)] eglInitialize OpenGLES failed with error EGL_NOT_INITIALIZED
+    [19965:0902/094526.740179:ERROR:gl_display.cc(802)] Initialization of all EGL display types failed.
+    [19965:0902/094526.740231:ERROR:gl_ozone_egl.cc(26)] GLDisplayEGL::Initialize failed.
+    [19965:0902/094526.742265:ERROR:viz_main_impl.cc(183)] Exiting GPU process due to errors during initialization
+    [19937:0902/094526.762991:ERROR:bus.cc(408)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+    [19937:0902/094526.776970:ERROR:bus.cc(408)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+    [19982:0902/094526.803098:ERROR:angle_platform_impl.cc(49)] Display.cpp:1085 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+    ERR: Display.cpp:1085 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+    [19982:0902/094526.803217:ERROR:gl_display.cc(495)] EGL Driver message (Critical) eglInitialize: GLX is not present.
+    [19982:0902/094526.803291:ERROR:gl_display.cc(767)] eglInitialize OpenGL failed with error EGL_NOT_INITIALIZED, trying next display type
+    [19982:0902/094526.803420:ERROR:angle_platform_impl.cc(49)] Display.cpp:1085 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+    ERR: Display.cpp:1085 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+    [19982:0902/094526.803500:ERROR:gl_display.cc(495)] EGL Driver message (Critical) eglInitialize: GLX is not present.
+    [19982:0902/094526.803582:ERROR:gl_display.cc(767)] eglInitialize OpenGLES failed with error EGL_NOT_INITIALIZED
+    [19982:0902/094526.803625:ERROR:gl_display.cc(802)] Initialization of all EGL display types failed.
+    [19982:0902/094526.803699:ERROR:gl_ozone_egl.cc(26)] GLDisplayEGL::Initialize failed.
+    [19982:0902/094526.805071:ERROR:angle_platform_impl.cc(49)] Display.cpp:1085 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+    ERR: Display.cpp:1085 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+    [19982:0902/094526.805160:ERROR:gl_display.cc(495)] EGL Driver message (Critical) eglInitialize: GLX is not present.
+    [19982:0902/094526.805211:ERROR:gl_display.cc(767)] eglInitialize OpenGL failed with error EGL_NOT_INITIALIZED, trying next display type
+    [19982:0902/094526.805377:ERROR:angle_platform_impl.cc(49)] Display.cpp:1085 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+    ERR: Display.cpp:1085 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+    [19982:0902/094526.805463:ERROR:gl_display.cc(495)] EGL Driver message (Critical) eglInitialize: GLX is not present.
+    [19982:0902/094526.805511:ERROR:gl_display.cc(767)] eglInitialize OpenGLES failed with error EGL_NOT_INITIALIZED
+    [19982:0902/094526.805609:ERROR:gl_display.cc(802)] Initialization of all EGL display types failed.
+    [19982:0902/094526.805660:ERROR:gl_ozone_egl.cc(26)] GLDisplayEGL::Initialize failed.
+    [19982:0902/094526.809056:ERROR:viz_main_impl.cc(183)] Exiting GPU process due to errors during initialization
+    [19981:0902/094526.851703:ERROR:command_buffer_proxy_impl.cc(125)] ContextResult::kTransientFailure: Failed to send GpuControl.CreateCommandBuffer.
+    
+[2025-09-02T09:45:27Z DEBUG mdbook_drawio] Produced Markdown snippet for SVG: ![Diagram not found at ../../gen/drawio/hello-page-0.svg](../../gen/drawio/hello-page-0.svg)
+[2025-09-02T09:45:27Z DEBUG mdbook_drawio] Preprocessing completed successfully
